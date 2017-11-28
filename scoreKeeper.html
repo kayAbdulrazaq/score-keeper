@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Score Keeper </title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link href="https://fonts.googleapis.com/css?family=Londrina+Sketch" rel="stylesheet">
+	<style>
+		body {background: url(https://source.unsplash.com/LhlxYMfnTF0); background-size: cover; background-position: center;
+		}
+		.winner{color: green;}
+		.jumbotron , .jumbotron h1{  text-align: center;}
+		#content{ text-align: center;}
+		.rowDisplay{font-family: 'Londrina Sketch', cursive;}
+		#scores{ font-weight:700; font-size:10em; }
+		.roundDisplay{	font-size: 2.5em; margin-top: 20%; margin-bottom: 30%;}
+		.roundDisplay p, .roundDisplay input{ font-weight: 700; font-family: 'Londrina Sketch', cursive;}
+		.btn{ margin: 20px;}
+		p{ margin: 0 px; }
+		input{margin-right: 100px;}
+
+	</style>
+</head>
+<body>
+	<div = "container-full">
+		<div class="container">
+			 <div class="jumbotron">
+		        <h1>Score Keeper Application</h1>
+		     </div>
+	 	</div>
+	    <div class="container" id = "content">
+		     <div class="rowDisplay"><!--firstrow - displays-->
+		      	<div class ="col-lg-12 col-xs-12"> 
+		      		<h1 id="scores"><span id="p1Display">0</span> to <span id = "p2Display">0</span></h1>
+		      	</div>
+		     </div> 
+
+		     <div class="roundDisplay">  <!-- second row -number of Rounds n the input text box-->
+		      	<div class="col-lg-6 col-md-6 col-sm-12"> 
+		      		<p> Playing to: <span>0</span></p>
+		      	</div>
+		      	<div class="col-lg-6 col-md-6 col-sm-12">
+		      		<input  type="number">
+		      	</div>
+		     </div>
+
+		     <div class="buttons"> <!--third row - the buttons-->
+		      	<div class = "col-lg-12">
+		      		<button id="p1Button" class="btn btn-primary btn-lg">Player One</button>
+		      		<button id="p2Button" class="btn btn-primary btn-lg">Player Two</button>
+		      	<div class = "col-lg-12">
+		      		<button id="reset" class="btn btn-danger btn-lg">Reset</button>
+		      	</div>	
+		     </div>
+	    </div>
+	</div>
+</body>
+<script type="text/javascript" src="scoreKeeper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>
+
