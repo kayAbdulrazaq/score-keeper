@@ -1,2 +1,2 @@
-# score-keeper
-An application that keeps count of the score during a game of two players
+# score-keeper application description
+An application that keeps count of the scores during a game of two players.
